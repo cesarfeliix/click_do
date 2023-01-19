@@ -39,6 +39,7 @@ body {
 #taskList li {
     margin-bottom: 10px;
     padding: 10px;
+    font-size: 1.5em;
     background-color: var(--background-color);
     border-radius: 5px;
     border: 1px solid var(--border-color);
@@ -46,6 +47,7 @@ body {
 }
 
 #taskList li.completed {
+    font-size: 1.5em;
     background-color: var(--completed-background-color);
     color: var(--completed-color);
     border-color: var(--completed-border-color);

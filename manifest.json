@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "To-Do List",
+    "version": "1.0",
+    "description": "A simple to-do list extension.",
+    "chrome_url_overrides" : {
+        "newtab": "index.html"
+    },
+    "browser_action": {
+        "default_title": "To-Do List",
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "content_security_policy": {
+        "extension_pages": "default-src 'self'"
+      }
+}
