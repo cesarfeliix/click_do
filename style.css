@@ -1,0 +1,79 @@
+body {
+    background-color: white;
+    color: #333;
+    font-family: 'Segoe UI';
+    --background-color: #f9f9f9;
+    --border-color: #ddd;
+    --placeholder-color: #ddd;
+    --caret-color: #333;
+    --dark-background-color: #1c1c1c;
+    --dark-color: #f9f9f9;
+    --dark-border-color: #333;
+    --dark-placeholder-color: #444;
+    --dark-caret-color: #f9f9f9;
+    --completed-background-color: #ddd;
+    --completed-color: #555;
+    --completed-border-color: #ccc;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-background-color);
+        color: var(--dark-color);
+        --background-color: var(--dark-background-color);
+        --border-color: var(--dark-border-color);
+        --placeholder-color: var(--dark-placeholder-color);
+        --caret-color: var(--dark-caret-color);
+        --completed-background-color: #333;
+        --completed-color: #ddd;
+        --completed-border-color: #444;
+    }
+}
+
+#taskList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#taskList li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    text-decoration: none;
+}
+
+#taskList li.completed {
+    background-color: var(--completed-background-color);
+    color: var(--completed-color);
+    border-color: var(--completed-border-color);
+    text-decoration: line-through;
+}
+
+#input-container {
+    position: relative;
+    margin-top: 10px;
+}
+
+#taskInput {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+    color: white;
+    background-color: transparent;
+    letter-spacing: 0.05em;
+    caret-color: var(--caret-color);
+}
+
+#taskInput:focus {
+    caret-color: var(--caret-color);
+}
+
+#taskInput::placeholder {
+    color: var(--placeholder-color);
+}
