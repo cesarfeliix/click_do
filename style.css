@@ -30,10 +30,17 @@ body {
     }
 }
 
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: left;
+}
 #taskList {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    width: 50%;
+    text-align: left;
+    text-justify: inter-word;
+    word-wrap: break-word;
 }
 
 #taskList li {
@@ -44,6 +51,7 @@ body {
     border-radius: 5px;
     border: 1px solid var(--border-color);
     text-decoration: none;
+    list-style-type: none;
 }
 
 #taskList li.completed {
@@ -55,8 +63,8 @@ body {
 }
 
 #input-container {
-    position: relative;
-    margin-top: 10px;
+    width: 50%;
+    text-align: left;
 }
 
 #taskInput {
@@ -78,4 +86,18 @@ body {
 
 #taskInput::placeholder {
     color: var(--placeholder-color);
+}
+
+h1{
+    text-align: left;
+    margin: 0%;
+    border: solid 0;
+    padding: 0%;
+}
+
+p{
+    text-align: left;
+    margin: 0%;
+    border: solid 0;
+    padding: 0%;
 }
